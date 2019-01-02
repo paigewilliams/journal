@@ -2,6 +2,7 @@ import { numberOfWords } from './journal';
 import { numberOfVowels } from './journal';
 import { numberOfCont } from './journal';
 import { getTeaser } from './journal';
+import './styles.css';
 
 $(document).ready(function(){
   $('#journal-form').submit(function(event){
