@@ -13,3 +13,13 @@ export function numberOfCont(body) {
   return con === null ? 0 : con.length;
 }
 
+export function getTeaser(body) {
+  var sentances = body.split('. ');
+  var wordsPerSentance = sentances[0].split(' ');
+  var firstEight = []
+  for (var i = 0; i < 8; i++) {
+    firstEight.push(wordsPerSentance[i]);
+  }
+  var teaser = firstEight.join(' ')
+   return teaser
+}
