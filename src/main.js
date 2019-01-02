@@ -1,7 +1,4 @@
-import { numberOfWords } from './journal';
-import { numberOfVowels } from './journal';
-import { numberOfCont } from './journal';
-import { getTeaser } from './journal';
+import { Entry } from './journal';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,14 +8,11 @@ $(document).ready(function(){
   $('#journal-form').submit(function(event){
     event.preventDefault();
     var body = $('#body').val();
-    var words = numberOfWords(body);
-    var vowels = numberOfVowels(body);
-    var cont = numberOfCont(body)
-    var teaser = getTeaser(body);
-    $('#words').append(words)
-    $('#vowels').append(vowels);
-    $('#cont').append(cont);
-    $('#teaser').append(teaser);
+    var newEntry = new Entry(body) 
+    $('#words').append(newEntry.numberOfWords())
+    $('#vowels').append(newEntry.numberOfVowels());
+    $('#cont').append(newEntry.numberOfCont());
+    $('#teaser').append(newEntry.getTeaser());
     
   })
 })
