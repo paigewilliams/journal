@@ -2,6 +2,8 @@ import { numberOfWords } from './journal';
 import { numberOfVowels } from './journal';
 import { numberOfCont } from './journal';
 import { getTeaser } from './journal';
+import $ from 'jquery';
+import 'bootstrap';
 import './styles.css';
 
 $(document).ready(function(){
