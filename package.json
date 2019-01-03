@@ -4,10 +4,15 @@
   "description": "a journal app",
   "main": "index.js",
   "scripts": {
+    "test": "karma start karma.conf.js",
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
-    "lint": "eslint src/*.js",
-    "test": "karma start karma.conf.js"
+    "watch": "webpack --watch",
+    "lint": "eslint src/*.js"
+    
+  },
+  "repository": {
+    "type": "git"
   },
   "keywords": [],
   "author": "Paige Williams",

@@ -40,7 +40,7 @@ module.exports = {
         test: /\.js$/,
         exclude: [
           /node_modules/,
-          /spec/,
+          /spec/
         ],
         loader: "babel-loader",
         options: {
