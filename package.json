@@ -1,16 +1,16 @@
 {
   "name": "journal",
   "version": "1.0.0",
-  "description": "",
+  "description": "a journal app",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
-    "start": "webpack-dev-server --open --mode development",
+    "start": "npm run build; webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "karma start karma.conf.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Paige Williams",
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.18",

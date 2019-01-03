@@ -1,6 +1,6 @@
 export function Entry(body) {
   this.body = body;
-};
+}
 
 Entry.prototype.numberOfWords = function() {
   var words = this.body.split(' ').length;
@@ -20,10 +20,10 @@ Entry.prototype.numberOfCont= function() {
 Entry.prototype.getTeaser= function() {
   var sentances = this.body.split('. ');
   var wordsPerSentance = sentances[0].split(' ');
-  var firstEight = []
+  var firstEight = [];
   for (var i = 0; i < 8; i++) {
     firstEight.push(wordsPerSentance[i]);
-  };
-  var teaser = firstEight.join(' ')
-   return teaser
+  }
+  var teaser = firstEight.join(' ');
+  return teaser;
 };
